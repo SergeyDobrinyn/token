@@ -1,0 +1,36 @@
+@import url(reset.css);
+@import url(fonts.css);
+@import url(grid.css);
+@import url(media.css);
+html {
+  font-family: "ClearSansRegular";
+  font-size: 1em;
+  color: #FFFFFF;
+}
+body {
+  background-image: url(../files/bg.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #404040;
+  background-blend-mode: multiply;
+}
+header .wrapper {
+  align-items: center;
+}
+.logo {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.logo:before {
+  content: "";
+  display: inline-block;
+  height: 64px;
+  width: 64px;
+  background-image: url(../files/cube.png);
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
+  margin-right: 8px;
+  border-radius: 100%;
+}

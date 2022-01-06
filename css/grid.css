@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 4px;
+}
+.block {
+  margin: 4px;
+}
