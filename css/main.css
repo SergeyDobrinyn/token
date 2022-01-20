@@ -4,7 +4,7 @@
 @import url(media.css);
 html {
   font-family: "ClearSansRegular";
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: #FFFFFF;
 }
 body {
@@ -20,19 +20,28 @@ header .wrapper {
   align-items: center;
 }
 .logo {
-  color: #FFFFFF;
-  text-decoration: none;
   font-family: "ClearSansBold";
 }
 .logo:before {
   content: "";
   display: inline-block;
-  height: 24px;
-  width: 24px;
+  height: 32px;
+  width: 32px;
   background-image: url(../files/cube.png);
   background-position: center;
   background-size: cover;
   vertical-align: middle;
   margin-right: 4px;
   border-radius: 100%;
+}
+header a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+header li {
+  display: inline-block;
+  margin-right: 24px;
+}
+header li:last-child {
+  margin-right: 0;
 }
