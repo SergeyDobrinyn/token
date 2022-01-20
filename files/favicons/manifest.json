@@ -1,13 +1,13 @@
 {
   "name": "Block token",
-  "short_name": "App",
-  "description": "Application OK",
+  "short_name": "Block",
+  "description": "Block token official site.",
   "lang": "en-EN",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#FFFFFF00",
+  "background_color": "#FFFFFF00",
   "icons": [
     {
       "src": "\/res\/img\/icons\/android-icon-72x72.png",
