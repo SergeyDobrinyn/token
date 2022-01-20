@@ -4,7 +4,7 @@
 @import url(media.css);
 html {
   font-family: "ClearSansRegular";
-  font-size: 1em;
+  font-size: 1.2em;
   color: #FFFFFF;
 }
 body {
@@ -14,6 +14,7 @@ body {
   background-repeat: no-repeat;
   background-color: #404040;
   background-blend-mode: multiply;
+  min-height: 100vh;
 }
 header .wrapper {
   align-items: center;
@@ -21,16 +22,17 @@ header .wrapper {
 .logo {
   color: #FFFFFF;
   text-decoration: none;
+  font-family: "ClearSansBold";
 }
 .logo:before {
   content: "";
   display: inline-block;
-  height: 64px;
-  width: 64px;
+  height: 24px;
+  width: 24px;
   background-image: url(../files/cube.png);
   background-position: center;
   background-size: cover;
   vertical-align: middle;
-  margin-right: 8px;
+  margin-right: 4px;
   border-radius: 100%;
 }
