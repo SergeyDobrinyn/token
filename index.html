@@ -42,6 +42,7 @@
   <link rel="manifest" href="files/favicons/manifest.json">
   <meta name="theme-color" content="#2B5797">
   <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.roadmap.min.css">
   <link rel="stylesheet" type="text/css" href="fonts/fontawesome/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
@@ -53,23 +54,46 @@
           <nav>
             <ul>
               <li><a href="#" class="logo">Block</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Roadmap</a></li>
-              <li><a href="#">Become a holder</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#roadmap">Roadmap</a></li>
+              <li><a href="#holder">Become a holder</a></li>
+              <li><a href="#faq">FAQ</a></li>
             </ul>
           </nav>
         </div>
         <div class="block">
           <ul>
-            <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-telegram-plane"></i>&nbsp;Telegram</a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-discord"></i>&nbsp;Discord</a></li>
+            <li><a href="https://twitter.com/blockspltoken" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a></li>
+            <li><a href="https://t.me/blockspltoken" target="_blank"><i class="fab fa-telegram-plane"></i>&nbsp;Telegram</a></li>
+            <li><a href="https://discord.gg/8nHcQFbPE3" target="_blank"><i class="fab fa-discord"></i>&nbsp;Discord</a></li>
           </ul>
         </div>
       </div>
     </div>
   </header>
-  <main></main>
+  <main>
+    <section id="about">
+      <div class="container">
+        <div class="wrapper">
+          <div class="block">
+            About token
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="roadmap">
+      <div class="container">
+        <div class="wrapper">
+          <div class="block">
+            <h2>Roadmap</h2>
+            <div id="timeline"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="holder">How to buy tokens</section>
+    <section id="faq">Questions</section>
+  </main>
   <footer>
     <div class="container">
       <div class="wrapper">
@@ -82,5 +106,34 @@
     </div>
   </footer>
   <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.roadmap.min.js"></script>
+  <script type="text/javascript">
+    var events = [
+      {
+        date: "Stage 1",
+        content: "<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Labore, tempora!</p>"
+      },
+      {
+        date: "2",
+        content: "Text"
+      },
+      {
+        date: "3",
+        content: "Text"
+      },
+      {
+        date: "8",
+        content: "Text"
+      }
+    ];
+    $("#timeline").roadmap(events, {
+      eventsPerSlide: 4,
+      orientation: "auto",
+      rootClass: "roadmap",
+      prewArrow: "<i class='fas fa-arrow-circle-right'></i>",
+      nextArrow: "<i class='fas fa-arrow-circle-left'></i>"
+    });
+  </script>
+  <script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>

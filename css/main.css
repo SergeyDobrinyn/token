@@ -40,8 +40,15 @@ header a {
 }
 header li {
   display: inline-block;
-  margin-right: 24px;
+  margin-right: 20px;
 }
 header li:last-child {
   margin-right: 0;
+}
+
+#roadmap .block {
+  min-width: 100%;
+}
+#roadmap p {
+  text-align: left;
 }
