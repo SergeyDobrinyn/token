@@ -74,25 +74,47 @@
   <main>
     <section id="about">
       <div class="container">
+        <h2>What is Block?</h2>
         <div class="wrapper">
           <div class="block">
-            About token
+            <h3>About Block</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, maxime ab dolores repellendus facere. Et eos tempora nemo nulla consequatur?</p>
+          </div>
+          <div class="block">
+            <h3>Distribution</h3>
+            <div id="graph"></div>
           </div>
         </div>
       </div>
     </section>
     <section id="roadmap">
       <div class="container">
+        <h2>Roadmap</h2>
         <div class="wrapper">
           <div class="block">
-            <h2>Roadmap</h2>
             <div id="timeline"></div>
           </div>
         </div>
       </div>
     </section>
-    <section id="holder">How to buy tokens</section>
-    <section id="faq">Questions</section>
+    <section id="holder">
+      <div class="container">
+        <h2>How to buy tokens</h2>
+        <div class="wrapper">          
+          <div class="block">
+            <p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, corrupti doloribus culpa hic ipsum, est itaque inventore animi officiis quis! Eum, earum molestiae fugit in eos voluptatem optio non ipsum aut totam nesciunt, explicabo amet soluta provident. Deserunt cum nostrum, vitae, fuga porro velit eius adipisci iure quam iste pariatur, eum odit sapiente fugit itaque maxime, commodi obcaecati illum doloremque vero exercitationem quasi magni. Praesentium consequatur quaerat dolores saepe fuga reiciendis voluptatibus minima magnam voluptate, facere, vero magni obcaecati earum.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+        <h2>Questions</h2>
+        <div class="wrapper">
+          <div class="block">List</div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     <div class="container">
@@ -106,6 +128,37 @@
     </div>
   </footer>
   <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/d3.js"></script>
+  <script type="text/javascript" src="js/plugin.js"></script>
+  <script type="text/javascript">
+    var distr = [
+      {
+        id: 1,
+        label: "Team",
+        value: 20,
+        color: "#FF0066"
+      },
+      {
+        id: 2,
+        label: "Liquidity",
+        value: 60,
+        color: #FF6600
+      },
+      {
+        id: 3,
+        label: "Selling",
+        value: 20,
+        color: #66FF00
+      }
+    ];
+    $("#graph").donutgraph({
+      data: distr,
+      container: "#graph",
+      width: 400,
+      height: 400,
+      donutWidth: 80
+    });
+  </script>
   <script type="text/javascript" src="js/jquery.roadmap.min.js"></script>
   <script type="text/javascript">
     var events = [
@@ -129,9 +182,7 @@
     $("#timeline").roadmap(events, {
       eventsPerSlide: 4,
       orientation: "auto",
-      rootClass: "roadmap",
-      prewArrow: "<i class='fas fa-arrow-circle-right'></i>",
-      nextArrow: "<i class='fas fa-arrow-circle-left'></i>"
+      rootClass: "roadmap"
     });
   </script>
   <script type="text/javascript" src="js/common.js"></script>

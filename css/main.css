@@ -16,6 +16,21 @@ body {
   background-blend-mode: multiply;
   min-height: 100vh;
 }
+h1, h2, h3, h4 {
+  text-align: center;
+}
+h1 {
+  font-size: 180%;
+}
+h2 {
+  font-size: 160%;
+}
+h3 {
+  font-size: 140%;
+}
+h4 {
+  font-size: 120%;
+}
 header .wrapper {
   align-items: center;
 }
@@ -45,7 +60,11 @@ header li {
 header li:last-child {
   margin-right: 0;
 }
-
+#about .block {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 49%;
+}
 #roadmap .block {
   min-width: 100%;
 }
