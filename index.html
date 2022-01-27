@@ -43,6 +43,7 @@
   <meta name="theme-color" content="#2B5797">
   <!-- Styles -->
   <link rel="stylesheet" type="text/css" href="css/jquery.roadmap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.beefup.css">
   <link rel="stylesheet" type="text/css" href="fonts/fontawesome/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <!-- Scripts -->
@@ -101,7 +102,7 @@
                       "rgb(255,100,0)",
                       "rgb(100,100,8)",
                       "rgb(64,81,82)",
-                      "rgb(40,40,40)"
+                      "rgb(140,40,40)"
                     ]
                   }]
                 },
@@ -111,6 +112,24 @@
                   },
                   legend: {
                     display: false
+                  },
+                  scales: {
+                    x: {
+                      ticks: {
+                        color: "#FFFFFF"
+                      },
+                      grid: {
+                        color: "rgba(255, 255, 255, .5)"
+                      }
+                    },
+                    y: {
+                      ticks: {
+                        color: "#FFFFFF"
+                      },
+                      grid: {
+                        color: "rgba(255, 255, 255, .5)"
+                      }
+                    }
                   }
                 }
               });
@@ -143,7 +162,14 @@
       <div class="container">
         <h2>Questions</h2>
         <div class="wrapper">
-          <div class="block">List</div>
+          <div class="block">
+            <article class="questions">
+              <h4 class="beefup-head">Header 1</h4>
+              <div class="beefup-body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Quod totam accusamus tempore dolores, recusandae aspernatur quos architecto rem explicabo aut.</p>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -160,11 +186,12 @@
     </div>
   </footer>
   <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.beefup.min.js"></script>
   <script type="text/javascript" src="js/jquery.roadmap.min.js"></script>
   <script type="text/javascript">
     var events = [
       {
-        date: "Stage 1",
+        date: "<h4>Stage 1</h4><p>Less then 1000 holders</p>",
         content: "<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Labore, tempora!</p>"
       },
       {
@@ -186,7 +213,6 @@
       rootClass: "roadmap"
     });
   </script>
-  
   <script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>
