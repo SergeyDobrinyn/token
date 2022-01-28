@@ -60,10 +60,10 @@
           <nav>
             <ul>
               <li><a href="#" class="logo">Block</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#roadmap">Roadmap</a></li>
-              <li><a href="#holder">Become a holder</a></li>
-              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
+              <li><a href="#holder" class="nav-link">Become a holder</a></li>
+              <li><a href="#faq" class="nav-link">FAQ</a></li>
             </ul>
           </nav>
         </div>
@@ -116,6 +116,7 @@
                   }]
                 },
                 options: {
+                  responsive: true,
                   title: {
                     display: false
                   },
@@ -188,8 +189,29 @@
         </div>
       </div>
     </div>
+    <div id="go-to-top"></div>
   </footer>
   <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.malihu.PageScroll2id.min.js"></script>
+  <script type="text/javascript">
+    $(".nav-link").mPageScroll2id();
+  </script>
+  <script type="text/javascript" src="js/jquery.gotop.js"></script>
+  <script type="text/javascript">
+    $("#go-to-top").goTop({
+      appear: 200,
+      scrolltime: 800,
+      src: "fa fa-arrow-circle-up",
+      width: 45,
+      place: "right",
+      fadein: 500,
+      fadeout: 500,
+      opacity: 0.5,
+      marginX: 2,
+      marginY: 14
+    });
+  </script>
+  <!-- <script type="text/javascript" src="js/common.js"></script> -->
   <script type="text/javascript" src="js/jquery.roadmap.min.js"></script>
   <script type="text/javascript">
     var events = [
@@ -216,6 +238,7 @@
       rootClass: "roadmap"
     });
   </script>
-  <script type="text/javascript" src="js/common.js"></script>
+
+  
 </body>
 </html>

@@ -2,11 +2,6 @@
 @import url(fonts.css);
 @import url(grid.css);
 @import url(media.css);
-html {
-  font-family: "AFuturaRoundDemi";
-  font-size: 1.1em;
-  color: #FFFFFF;
-}
 body {
   background-image: url(../files/bg.jpg);
   background-position: top center;
@@ -14,7 +9,9 @@ body {
   background-repeat: no-repeat;
   background-color: #404040;
   background-blend-mode: multiply;
-  min-height: 100vh;
+  font-family: "AFuturaRoundDemi";
+  font-size: 1.4em;
+  color: #FFFFFF;
 }
 h1, h2, h3, h4 {
   text-align: center;
@@ -82,4 +79,9 @@ ul.map-list {
   list-style-type: disc;
   list-style-position: outside;
   text-align: left;
+}
+span#goTopSpan {
+  color: rgb(40,194,226);
+  text-shadow: 0px 0px 4px rgba(0,0,0,.5);
+  z-index: 999;
 }
