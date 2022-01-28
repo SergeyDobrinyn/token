@@ -78,7 +78,7 @@ header li:last-child {
 .map-text {
   text-align: left;
 }
-.map-list {
+ul.map-list {
   list-style-type: disc;
   list-style-position: outside;
   text-align: left;
