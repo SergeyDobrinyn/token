@@ -146,5 +146,4 @@ $(document).ready(function() {
     });
     return false;
   });
-  $(".questions").beefup();
 });

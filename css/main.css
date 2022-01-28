@@ -3,7 +3,7 @@
 @import url(grid.css);
 @import url(media.css);
 html {
-  font-family: "ClearSansRegular";
+  font-family: "AFuturaRoundDemi";
   font-size: 1.1em;
   color: #FFFFFF;
 }
@@ -35,7 +35,7 @@ header .wrapper {
   align-items: center;
 }
 .logo {
-  font-family: "ClearSansBold";
+  text-transform: uppercase;
 }
 .logo:before {
   content: "";
@@ -68,6 +68,12 @@ header li:last-child {
 #roadmap .block {
   min-width: 100%;
 }
-#roadmap p {
+.map-header {
+  margin-bottom: 8px;
+}
+.map-header+p {
+  margin-bottom: 8px;
+}
+.map-text {
   text-align: left;
 }
