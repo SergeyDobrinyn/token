@@ -88,6 +88,16 @@ ul.map-list {
   list-style-position: outside;
   text-align: left;
 }
+.holder-reward {
+  margin-bottom: 8px;
+}
+.holder-reward:last-child {
+  margin-bottom: 0;
+}
+.holder-reward h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
 .holder-reward img {
   width: 60px;
   float: left;
