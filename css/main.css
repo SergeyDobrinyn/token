@@ -47,18 +47,18 @@ header .wrapper {
   margin-right: 4px;
   border-radius: 100%;
 }
-header a {
+header a, #start a {
   text-decoration: none;
   color: #FFFFFF;
 }
-header li {
+header li, #start li {
   display: inline-block;
   margin-right: 20px;
 }
-header li:last-child {
+header li:last-child, #start li:last-child {
   margin-right: 0;
 }
-#about .block {
+#about .block, #holder .block {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 49%;
@@ -81,7 +81,7 @@ ul.map-list {
   text-align: left;
 }
 span#goTopSpan {
-  color: rgb(40,194,226);
+  color: rgb(255,255,255);
   text-shadow: 0px 0px 4px rgba(0,0,0,.5);
   z-index: 999;
 }
