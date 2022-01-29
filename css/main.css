@@ -33,7 +33,7 @@ h4 {
 p, ul {
   line-height: 1.4;
 }
-header .wrapper {
+header .wrapper, footer .wrapper {
   align-items: center;
 }
 .logo {
@@ -51,7 +51,7 @@ header .wrapper {
   margin-right: 4px;
   border-radius: 100%;
 }
-header a, #start a, footer a {
+header a, #start a, #about a, footer a {
   text-decoration: none;
   color: #FFFFFF;
 }
