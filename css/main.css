@@ -56,7 +56,7 @@ header .wrapper, footer .wrapper {
   margin-right: 4px;
   border-radius: 100%;
 }
-header a, #start a, #about a, footer a {
+header a, #start a, #about a, #holder a, footer a {
   text-decoration: none;
   color: #FFFFFF;
 }
@@ -65,7 +65,7 @@ header a {
 }
 header li, #start li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 16px;
 }
 header li:last-child, #start li:last-child {
   margin-right: 0;
@@ -75,9 +75,8 @@ header li:last-child, #start li:last-child {
   flex-shrink: 1;
   flex-basis: 49%;
 }
-#about a, #start a {
+#about a, #start a, #holder a {
   font-weight: 500;
-  color: #6B8BE3;
 }
 #start h1 {
   font-size: 400%;
@@ -122,6 +121,10 @@ ul.map-list {
 .holder-reward p {
   margin-left: 60px;
 }
+.holder-reward ul {
+  list-style-type: disc;
+  margin-left: calc(1em + 60px);
+}
 #holder ol {
   list-style-type: decimal;
   margin-left: 1em;
@@ -131,6 +134,9 @@ ul.map-list {
 }
 ul.nested {
   list-style-type: none;
+}
+footer {
+  margin-top: 24px;
 }
 span#goTopSpan {
   color: rgb(255,255,255);
