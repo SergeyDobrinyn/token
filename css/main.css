@@ -1,5 +1,6 @@
 @import url(reset.css);
-@import url(fonts.css);
+/* @import url(fonts.css); */
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap");
 @import url(grid.css);
 @import url(media.css);
 body {
@@ -9,8 +10,8 @@ body {
   background-repeat: no-repeat;
   background-color: #404040;
   background-blend-mode: multiply;
-  font-family: "AFuturaRoundDemi";
-  font-size: 1.4em;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 1.25em;
   color: #FFFFFF;
   padding: 24px 0;
 }
@@ -20,24 +21,28 @@ h1, h2, h3, h4 {
 }
 h1 {
   font-size: 180%;
+  font-weight: 800;
 }
 h2 {
   font-size: 160%;
+  font-weight: 700;
 }
 h3 {
   font-size: 140%;
+  font-weight: 500;
 }
 h4 {
   font-size: 120%;
 }
-p, ul {
-  line-height: 1.4;
+p, ol, ul {
+  line-height: 1.3;
 }
 header .wrapper, footer .wrapper {
   align-items: center;
 }
 .logo {
   text-transform: uppercase;
+  font-weight: 800;
 }
 .logo:before {
   content: "";
@@ -55,6 +60,9 @@ header a, #start a, #about a, footer a {
   text-decoration: none;
   color: #FFFFFF;
 }
+header a {
+  font-weight: 700;
+}
 header li, #start li {
   display: inline-block;
   margin-right: 20px;
@@ -67,18 +75,27 @@ header li:last-child, #start li:last-child {
   flex-shrink: 1;
   flex-basis: 49%;
 }
+#about a, #start a {
+  font-weight: 500;
+  color: #6B8BE3;
+}
 #start h1 {
   font-size: 400%;
   text-align: left;
+}
+#start h1+p {
+  margin-bottom: 24px;
 }
 #roadmap .block {
   min-width: 100%;
 }
 .map-header {
   margin-bottom: 8px;
+  font-weight: 700;
 }
 .map-header+p {
   margin-bottom: 8px;
+  font-weight: 500;
 }
 .map-text {
   text-align: left;
@@ -89,7 +106,7 @@ ul.map-list {
   text-align: left;
 }
 .holder-reward {
-  margin-bottom: 8px;
+  margin-bottom: 1.25em;
 }
 .holder-reward:last-child {
   margin-bottom: 0;
@@ -104,6 +121,16 @@ ul.map-list {
 }
 .holder-reward p {
   margin-left: 60px;
+}
+#holder ol {
+  list-style-type: decimal;
+  margin-left: 1em;
+}
+#copyaddress {
+  cursor: pointer;
+}
+ul.nested {
+  list-style-type: none;
 }
 span#goTopSpan {
   color: rgb(255,255,255);
