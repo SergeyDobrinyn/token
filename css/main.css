@@ -122,16 +122,16 @@ ul.map-list {
   display: inline-block;
 }
 .gaugemeter span, .gaugemeter b {
-  width: 54%;
+  width: 60%;
   position: absolute;
   text-align: center;
   display: inline-block;
   color: rgb(255,255,255);
-  font-weight: 500;
+  font-weight: 500;  
   overflow: hidden;
   white-space: wrap;
   text-overflow: ellipsis;
-  margin: 0 23%;
+  margin: 0 20%;
 }
 .gaugemeter[data-style="semi"] b {
   width: 80%;

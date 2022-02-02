@@ -35,7 +35,7 @@
             label: "",
             label_color: "Black",
             text: "",
-            text_size: 0.22,
+            text_size: 0.16,
             fill: "",
             showvalue: false
         }, t);
