@@ -86,7 +86,9 @@ header li:last-child, #start li:last-child {
   margin-bottom: 24px;
 }
 #roadmap .block {
-  min-width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  /*flex-basis: 49%;*/
 }
 .map-header {
   margin-bottom: 8px;
@@ -103,6 +105,48 @@ ul.map-list {
   list-style-type: disc;
   list-style-position: outside;
   text-align: left;
+}
+#roadmap .wrapper:last-child {
+  justify-content: space-around;
+  align-items: center;
+}
+#roadmap .wrapper:last-child .block {
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+.gaugemeter {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  cursor: default;
+  display: inline-block;
+}
+.gaugemeter span, .gaugemeter b {
+  width: 54%;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  color: rgb(255,255,255);
+  font-weight: 500;
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
+  margin: 0 23%;
+}
+.gaugemeter[data-style="semi"] b {
+  width: 80%;
+  margin: 0 10%;
+}
+.gaugemeter s, .gaugemeter u {
+  text-decoration: none;
+  font-size: .6em;
+  font-weight: 200;
+  opacity: .6;
+}
+.gaugemeter b {
+  color: #FFFFFF !important;
+  font-weight: 500;
+  opacity: 1;
 }
 .holder-reward {
   margin-bottom: 1.25em;

@@ -90,7 +90,7 @@
             <h2>About Block</h2>
             <p>Block is an easy-to-use community and trading token on the Solana blockchain. It is based on the idea that operations with cryptocurrencies should be accessible to everyone without exception and be truly convenient and efficient.</p>
             <p><a href="https://solscan.io/token/Adm58Jgzb2qMLnMGMYyT91TM1ueLQvQDdMqAkte5F1Cq" target="_blank"><i class="fas fa-search"></i>&nbsp;Watch on Solscan.io</a><br><a href="https://explorer.solana.com/address/Adm58Jgzb2qMLnMGMYyT91TM1ueLQvQDdMqAkte5F1Cq" target="_blank"><i class="fas fa-search"></i>&nbsp;Watch on Solana Explorer</a></p>
-            <p>Currently, we are pre-selling tokens to rise softcup (100,000&nbsp;USDC) or hardcup (300,000&nbsp;USDC) for a full start.</p>
+            <p>Currently, we are pre-selling tokens to rise soft cup (100,000&nbsp;USDC) or hard cup (300,000&nbsp;USDC) for a full start.</p>
           </div>
           <div class="block">
             <h2>Distribution</h2>
@@ -151,6 +151,17 @@
         <div class="wrapper">
           <div class="block">
             <div id="timeline"></div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="block">
+            <div class="gaugemeter" data-percent="0" data-label="Sold" data-size="180" data-width="20" data-color="rgb(255,255,255)" data-stripe="0" data-text="0%"></div>
+          </div>
+          <div class="block">
+            <div class="gaugemeter" data-percent="0" data-label="Soft cup" data-size="180" data-width="20" data-color="rgb(255,255,255)" data-stripe="0" data-text="0%"></div>
+          </div>
+          <div class="block">
+            <div class="gaugemeter" data-percent="0" data-label="Hard cup" data-size="180" data-width="20" data-color="rgb(255,255,255)" data-stripe="0" data-text="0%"></div>
           </div>
         </div>
       </div>
@@ -249,6 +260,10 @@
     $("#copyaddress").click(function() {
       $(this).CopyToClipboard();
     });
+  </script>
+  <script type="text/javascript" src="js/GaugeMeter.js"></script>
+  <script type="text/javascript">
+    $(".gaugemeter").gaugeMeter();
   </script>
   <script type="text/javascript" src="js/jquery.roadmap.min.js"></script>
   <script type="text/javascript">
