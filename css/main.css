@@ -109,6 +109,7 @@ ul.map-list {
 #roadmap .wrapper:last-child {
   justify-content: space-around;
   align-items: center;
+  padding-top: 48px;
 }
 #roadmap .wrapper:last-child .block {
   flex-grow: 0;
