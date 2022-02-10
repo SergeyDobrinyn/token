@@ -85,6 +85,18 @@ header li:last-child, #start li:last-child {
 #start h1+p {
   margin-bottom: 24px;
 }
+.solana {
+  max-width: 30%;
+  margin: 0 auto;
+}
+.solana p {
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 100;
+}
+.solana img {
+  max-width: 100%;
+}
 #roadmap .block {
   flex-grow: 1;
   flex-shrink: 1;
