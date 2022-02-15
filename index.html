@@ -109,13 +109,14 @@
               let myBars = new Chart(myChart, {
                 type: "bar",
                 data: {
-                  labels: ["Team", "Liquidity", "Pre-sale and sale", "Airdrop"],
+                  labels: ["Team", "Liquidity", "Giveaway", "Pre-sale and sale", "Airdrop"],
                   datasets: [{
                     label: "Distribution of tokens",
-                    data: [2000000, 1000000, 6000000, 1000000],
+                    data: [2000000, 1000000, 100000, 6000000, 900000],
                     backgroundColor: [
                       "rgb(255,100,0)",
                       "rgb(100,100,8)",
+                      "rgb(164,45,36)",
                       "rgb(164,81,82)",
                       "rgb(4,140,40)"
                     ]
@@ -164,7 +165,7 @@
         </div>
         <div class="wrapper">
           <div class="block">
-            <div class="gaugemeter" data-percent="1" data-label="Giveaway" data-size="180" data-width="20" data-color="rgb(255,255,255)" data-stripe="0" data-text="1%"></div>
+            <div class="gaugemeter" data-percent="10" data-label="Giveaway" data-size="180" data-width="20" data-color="rgb(255,255,255)" data-stripe="0" data-text="10.0%"></div>
           </div>
           <div class="block">  
             <div class="gaugemeter" data-percent="0" data-label="Sold" data-size="180" data-width="20" data-color="rgb(255,255,255)" data-stripe="0" data-text="0"></div>
